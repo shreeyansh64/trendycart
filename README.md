@@ -1,16 +1,19 @@
-# trendycart
+# TrendyCart 🛍️
 
-A new Flutter project.
+**TrendyCart** is a modern Flutter shopping app prototype featuring multiple pages like Home, Menu, Cart, and Profile. It's designed to be clean, fast, and easy to extend for future e-commerce development.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- Modular screen structure (Home, Menu, Cart, Profile)
+- Clean and responsive UI using Flutter’s Material design
+- Theme customization with seed-based color scheme
+- Easy navigation between sections
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Getting Started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+        git clone https://github.com/yourusername/trendycart.git
+        flutter pub get
+        flutter run
+    ```
