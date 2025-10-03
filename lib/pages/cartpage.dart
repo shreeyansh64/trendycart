@@ -41,6 +41,7 @@ class _CartPageState extends State<CartPage> {
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 20, bottom: 30),
@@ -163,10 +164,91 @@ class _CartPageState extends State<CartPage> {
                         ],
                       ),
                     ),
-                    OutlinedButton(onPressed: (){}, child: Text("x1"))
+                    Row(
+                      children: [
+                        OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            padding: EdgeInsets.symmetric(horizontal: 5)
+                          ),
+                          onPressed: () {}, child: Text("x1")),
+                          SizedBox(width: 40),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.amber[300],
+                            padding: EdgeInsets.symmetric(horizontal: 20),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          onPressed: () {},
+                          child: Text(
+                            "CHECKOUT",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 40),
+            child: Container(
+              height: 150,
+              width: double.infinity,
+              color: Colors.grey[200],
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(FontAwesomeIcons.truckFast, size: 25),
+                        SizedBox(width: 20),
+                        Text(
+                          "Free Shipping for orders above ₹990",
+                          style: TextStyle(color: Colors.black, fontSize: 15),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(FontAwesomeIcons.creditCard, size: 25),
+                        SizedBox(width: 20),
+                        Text(
+                          "Secured Payment & Checkout",
+                          style: TextStyle(color: Colors.black, fontSize: 15),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(FontAwesomeIcons.rotate, size: 25),
+                        SizedBox(width: 20),
+                        Text(
+                          "Easy Returns, Free Pick Up",
+                          style: TextStyle(color: Colors.black, fontSize: 15),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16, bottom: 30),
+            child: Text(
+              "You might also like",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+              ),
             ),
           ),
         ],
