@@ -35,7 +35,7 @@ class _MainPageState extends State<MainPage> {
   int _currentState = 0;
   final List<Widget> _pages = [
     Homepage(),
-    Menupage(),
+    MenuPage(),
     CartPage(),
     Profilepage(),
   ];
