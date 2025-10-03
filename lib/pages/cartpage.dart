@@ -252,49 +252,58 @@ class _CartPageState extends State<CartPage> {
                 ),
               ),
             ),
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.asset('assets/images/polo.webp',width: 230,height: 250,fit: BoxFit.cover,),
-                      Text("Heritage Cotton Polo",style: TextStyle(color: Colors.black),),
-                      
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8,bottom: 3),
-                        child: Text("₹1,590",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
-                      ),
-                      Text.rich(TextSpan(
-                        text: "Get it for ",
-                        style: TextStyle(color: Colors.green[400]),
-                        children:[TextSpan(text: "₹1,393",style: TextStyle(color: Colors.green[400],fontWeight: FontWeight.bold))]
-                      ))
-                    ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 30),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset('assets/images/polo.webp',width: 230,height: 250,fit: BoxFit.cover,),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 3),
+                          child: Text("Heritage Cotton Polo",style: TextStyle(color: Colors.black),),
+                        ),
+                        
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8,bottom: 3),
+                          child: Text("₹1,590",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                        ),
+                        Text.rich(TextSpan(
+                          text: "Get it for ",
+                          style: TextStyle(color: Colors.green[400]),
+                          children:[TextSpan(text: "₹1,393",style: TextStyle(color: Colors.green[400],fontWeight: FontWeight.bold))]
+                        ))
+                      ],
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.asset('assets/images/polo2.webp',width: 230,height: 250,fit: BoxFit.cover,),
-                      Text("Élite Cotton Polo Tee",style: TextStyle(color: Colors.black),),
-                      
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8,bottom: 3),
-                        child: Text("₹1,390",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
-                      ),
-                      Text.rich(TextSpan(
-                        text: "Get it for ",
-                        style: TextStyle(color: Colors.green[400]),
-                        children:[TextSpan(text: "₹1,043",style: TextStyle(color: Colors.green[400],fontWeight: FontWeight.bold))]
-                      ))
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset('assets/images/polo2.webp',width: 230,height: 250,fit: BoxFit.cover,),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 3),
+                          child: Text("Élite Cotton Polo Tee",style: TextStyle(color: Colors.black),),
+                        ),
+                        
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8,bottom: 3),
+                          child: Text("₹1,390",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                        ),
+                        Text.rich(TextSpan(
+                          text: "Get it for ",
+                          style: TextStyle(color: Colors.green[400]),
+                          children:[TextSpan(text: "₹1,043",style: TextStyle(color: Colors.green[400],fontWeight: FontWeight.bold))]
+                        ))
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             )
           ],
         ),
