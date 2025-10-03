@@ -93,7 +93,11 @@ class _HomepageState extends State<Homepage> {
                   children: [
                     Row(
                       children: [
-                        Icon(FontAwesomeIcons.boxOpen, color: Colors.black,size: 30,),
+                        Icon(
+                          FontAwesomeIcons.boxOpen,
+                          color: Colors.black,
+                          size: 30,
+                        ),
                         SizedBox(width: 10),
                         Column(
                           children: [
@@ -112,7 +116,7 @@ class _HomepageState extends State<Homepage> {
                     ),
                     Row(
                       children: [
-                        Icon(Icons.flash_on, color: Colors.black,size: 30,),
+                        Icon(Icons.flash_on, color: Colors.black, size: 30),
                         SizedBox(width: 10),
                         Column(
                           children: [
@@ -131,7 +135,11 @@ class _HomepageState extends State<Homepage> {
                     ),
                     Row(
                       children: [
-                        Icon(FontAwesomeIcons.truckFast, color: Colors.black,size: 30,),
+                        Icon(
+                          FontAwesomeIcons.truckFast,
+                          color: Colors.black,
+                          size: 30,
+                        ),
                         SizedBox(width: 10),
                         Column(
                           children: [
@@ -151,10 +159,39 @@ class _HomepageState extends State<Homepage> {
                   ],
                 ),
               ),
-              Image.asset('assets/images/sale.png',width: double.infinity,height: 700,fit: BoxFit.cover,),
+              Image.asset(
+                'assets/images/sale.png',
+                width: double.infinity,
+                height: 700,
+                fit: BoxFit.cover,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 40),
-                child: Text("PRICE DROP CORNER",style: TextStyle(color: Colors.black,fontFamily: 'Poppins',fontSize: 40,fontWeight: FontWeight.bold),),
+                child: Text(
+                  "PRICE DROP CORNER",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Poppins',
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 40),
+                child: Image.asset(
+                  'assets/images/price_drop.webp',
+                  width: double.infinity,
+                  height: 240,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset('assets/images/price_drop2.webp',width: 200,height: 250,fit: BoxFit.cover,),
+                  Image.asset('assets/images/price_drop3.webp',width: 270,height: 250,fit: BoxFit.cover,),
+                ],
               )
             ],
           ),
