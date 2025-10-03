@@ -64,22 +64,20 @@ class _HomepageState extends State<Homepage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.search,
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.search,
+                            color: Color.fromARGB(255, 150, 150, 150),
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            "Search for your favorite outfits",
+                            style: TextStyle(
                               color: Color.fromARGB(255, 150, 150, 150),
                             ),
-                            SizedBox(width: 10),
-                            Text(
-                              "Search for your favorite outfits",
-                              style: TextStyle(
-                                color: Color.fromARGB(255, 150, 150, 150),
-                              ),
-                            ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                       Icon(
                         Icons.photo_camera_outlined,

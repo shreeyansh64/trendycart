@@ -84,7 +84,7 @@ class _CartPageState extends State<CartPage> {
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 250,
               child: Row(
@@ -99,44 +99,40 @@ class _CartPageState extends State<CartPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Essential Beige Flat-Front Pants",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Essential Beige Flat-Front Pants",
+                            style: TextStyle(color: Colors.black, fontSize: 15),
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Color.fromARGB(255, 235, 226, 202),
+                                ),
                               ),
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 20,
-                                  width: 20,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8),
-                                    color: Color.fromARGB(255, 235, 226, 202),
-                                  ),
-                                ),
-                                Text(
-                                  " / M(M)",
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Icon(
-                                  Icons.keyboard_arrow_down_outlined,
+                              Text(
+                                " / M(M)",
+                                style: TextStyle(
                                   color: Colors.black,
+                                  fontWeight: FontWeight.bold,
                                 ),
-                              ],
-                            ),
-                          ],
-                        ),
+                              ),
+                              Icon(
+                                Icons.keyboard_arrow_down_outlined,
+                                color: Colors.black,
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
-                      Container(
+
+                      SizedBox(
                         height: 50,
                         width: 80,
                         // color: Colors.red,

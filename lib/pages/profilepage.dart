@@ -51,7 +51,7 @@ class _ProfilepageState extends State<Profilepage> {
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 child: Row(
                   children: [
-                    CircleAvatar(child: Icon(Icons.person), radius: 30),
+                    CircleAvatar(radius: 30, child: Icon(Icons.person)),
                     SizedBox(width: 15),
                     Column(
                       children: [
@@ -133,9 +133,9 @@ class _ProfilepageState extends State<Profilepage> {
                           child: Row(
                             children: [
                               CircleAvatar(
-                                child: Icon(Icons.person_2_outlined),
                                 backgroundColor: Colors.deepPurple[100],
                                 radius: 20,
+                                child: Icon(Icons.person_2_outlined),
                               ),
                               SizedBox(width: 10),
                               Text(
