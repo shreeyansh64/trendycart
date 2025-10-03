@@ -11,7 +11,9 @@ class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("MenuPage",style: TextStyle(color: Colors.black),),),
+      appBar: AppBar(
+        title: Text("MenuPage", style: TextStyle(color: Colors.black)),
+      ),
     );
   }
 }

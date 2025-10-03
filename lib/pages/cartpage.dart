@@ -105,7 +105,10 @@ class _CartPageState extends State<CartPage> {
                           children: [
                             Text(
                               "Essential Beige Flat-Front Pants",
-                              style: TextStyle(color: Colors.black, fontSize: 15),
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 15,
+                              ),
                             ),
                             Row(
                               children: [
@@ -172,10 +175,12 @@ class _CartPageState extends State<CartPage> {
                         children: [
                           OutlinedButton(
                             style: OutlinedButton.styleFrom(
-                              padding: EdgeInsets.symmetric(horizontal: 5)
+                              padding: EdgeInsets.symmetric(horizontal: 5),
                             ),
-                            onPressed: () {}, child: Text("x1")),
-                            SizedBox(width: 40),
+                            onPressed: () {},
+                            child: Text("x1"),
+                          ),
+                          SizedBox(width: 40),
                           ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.amber[300],
@@ -266,21 +271,46 @@ class _CartPageState extends State<CartPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/polo.webp',width: 230,height: 250,fit: BoxFit.cover,),
+                          Image.asset(
+                            'assets/images/polo.webp',
+                            width: 230,
+                            height: 250,
+                            fit: BoxFit.cover,
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(top: 3),
-                            child: Text("Heritage Cotton Polo",style: TextStyle(color: Colors.black),),
+                            child: Text(
+                              "Heritage Cotton Polo",
+                              style: TextStyle(color: Colors.black),
+                            ),
                           ),
-                          
+
                           Padding(
-                            padding: const EdgeInsets.only(top: 8,bottom: 3),
-                            child: Text("₹1,590",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                            padding: const EdgeInsets.only(top: 8, bottom: 3),
+                            child: Text(
+                              "₹1,590",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
-                          Text.rich(TextSpan(
-                            text: "Get it for ",
-                            style: TextStyle(color: Colors.green[400]),
-                            children:[TextSpan(text: "₹1,393",style: TextStyle(color: Colors.green[400],fontWeight: FontWeight.bold))]
-                          ))
+                          Text.rich(
+                            TextSpan(
+                              text: "Get it for ",
+                              style: TextStyle(color: Colors.green[400]),
+                              children: [
+                                TextSpan(
+                                  text: "₹1,393",
+                                  style: TextStyle(
+                                    color: Colors.green[400],
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
@@ -289,28 +319,53 @@ class _CartPageState extends State<CartPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset('assets/images/polo2.webp',width: 230,height: 250,fit: BoxFit.cover,),
+                          Image.asset(
+                            'assets/images/polo2.webp',
+                            width: 230,
+                            height: 250,
+                            fit: BoxFit.cover,
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(top: 3),
-                            child: Text("Élite Cotton Polo Tee",style: TextStyle(color: Colors.black),),
+                            child: Text(
+                              "Élite Cotton Polo Tee",
+                              style: TextStyle(color: Colors.black),
+                            ),
                           ),
-                          
+
                           Padding(
-                            padding: const EdgeInsets.only(top: 8,bottom: 3),
-                            child: Text("₹1,390",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                            padding: const EdgeInsets.only(top: 8, bottom: 3),
+                            child: Text(
+                              "₹1,390",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
-                          Text.rich(TextSpan(
-                            text: "Get it for ",
-                            style: TextStyle(color: Colors.green[400]),
-                            children:[TextSpan(text: "₹1,043",style: TextStyle(color: Colors.green[400],fontWeight: FontWeight.bold))]
-                          ))
+                          Text.rich(
+                            TextSpan(
+                              text: "Get it for ",
+                              style: TextStyle(color: Colors.green[400]),
+                              children: [
+                                TextSpan(
+                                  text: "₹1,043",
+                                  style: TextStyle(
+                                    color: Colors.green[400],
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -60,8 +60,11 @@ class _MainPageState extends State<MainPage> {
           },
           selectedIndex: _currentState,
           destinations: [
-            NavigationDestination(icon: Icon(Icons.home_outlined), label: "Home",
-            selectedIcon: Icon(Icons.home_sharp),),
+            NavigationDestination(
+              icon: Icon(Icons.home_outlined),
+              label: "Home",
+              selectedIcon: Icon(Icons.home_sharp),
+            ),
             NavigationDestination(
               icon: Icon(Icons.manage_search_outlined),
               label: "Menu",
