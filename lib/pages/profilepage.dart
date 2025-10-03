@@ -14,6 +14,9 @@ class _ProfilepageState extends State<Profilepage> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 240, 240, 240),
       appBar: AppBar(
+        surfaceTintColor: Colors.transparent,
+        elevation: 0,
+        scrolledUnderElevation: 0,
         backgroundColor: Color.fromARGB(255, 240, 240, 240),
         actions: [
           IconButton(
@@ -277,7 +280,7 @@ class _ProfilepageState extends State<Profilepage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 30),
+                padding: const EdgeInsets.only(top: 20, bottom: 30),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
@@ -294,7 +297,7 @@ class _ProfilepageState extends State<Profilepage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 10,bottom: 10),
+                          padding: const EdgeInsets.only(top: 10, bottom: 10),
                           child: Text(
                             "Help Center",
                             style: TextStyle(
@@ -306,28 +309,57 @@ class _ProfilepageState extends State<Profilepage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 16),
-                          child: Container(color: Colors.black,height: 2.5,width: double.infinity,),
+                          child: Container(
+                            color: Colors.black,
+                            height: 2.5,
+                            width: double.infinity,
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 36),
-                          child: Text("Customer Service",style: TextStyle(fontSize: 15),),
+                          child: Text(
+                            "Customer Service",
+                            style: TextStyle(fontSize: 15),
+                          ),
                         ),
-                        Container(color: Colors.grey[300],height: 1,width: double.infinity,),
+                        Container(
+                          color: Colors.grey[300],
+                          height: 1,
+                          width: double.infinity,
+                        ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 36),
-                          child: Text("Return Policy",style: TextStyle(fontSize: 15),),
+                          child: Text(
+                            "Return Policy",
+                            style: TextStyle(fontSize: 15),
+                          ),
                         ),
-                        Container(color: Colors.grey[300],height: 1,width: double.infinity,),
+                        Container(
+                          color: Colors.grey[300],
+                          height: 1,
+                          width: double.infinity,
+                        ),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 36),
-                          child: Text("Shipping & Delivery",style: TextStyle(fontSize: 15),),
+                          child: Text(
+                            "Shipping & Delivery",
+                            style: TextStyle(fontSize: 15),
+                          ),
                         ),
-                        Container(color: Colors.grey[300],height: 1,width: double.infinity,),
+                        Container(
+                          color: Colors.grey[300],
+                          height: 1,
+                          width: double.infinity,
+                        ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 36,bottom: 36),
-                          child: Text("More",style: TextStyle(fontSize: 15),),
+                          padding: const EdgeInsets.only(top: 36, bottom: 36),
+                          child: Text("More", style: TextStyle(fontSize: 15)),
                         ),
-                        Container(color: Colors.grey[300],height: 1,width: double.infinity,),
+                        Container(
+                          color: Colors.grey[300],
+                          height: 1,
+                          width: double.infinity,
+                        ),
                       ],
                     ),
                   ),
