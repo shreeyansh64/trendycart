@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Profilepage extends StatefulWidget {
   const Profilepage({super.key});
@@ -67,7 +68,7 @@ class _ProfilepageState extends State<Profilepage> {
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: Card(
-                elevation: 9,
+                elevation: 6,
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
@@ -109,6 +110,43 @@ class _ProfilepageState extends State<Profilepage> {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20),
+              child: Container(
+                height: 170,
+                width: double.infinity,
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.white),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 20,horizontal: 30),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text("My Orders",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 19),),
+                          Text("View More >",style: TextStyle(color: Colors.black,fontSize: 17),)
+                        ],
+                      ),
+                    ),
+                    NavigationBarTheme(
+                      data: NavigationBarThemeData(
+                        backgroundColor: Colors.white,
+                        indicatorColor: Colors.white
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: NavigationBar(destinations: [
+                          NavigationDestination(icon: Icon(FontAwesomeIcons.creditCard,size: 30,), label: "Unpaid"),
+                          NavigationDestination(icon: Icon(FontAwesomeIcons.truck,size: 30,), label: "Processing"),
+                          NavigationDestination(icon: Icon(FontAwesomeIcons.boxOpen,size: 30,), label: "Delivered"),
+                          NavigationDestination(icon: Icon(FontAwesomeIcons.rotateLeft,size: 30,), label: "Returns"),
+                        ]),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
