@@ -277,7 +277,7 @@ class _ProfilepageState extends State<Profilepage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20,bottom: 30),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),

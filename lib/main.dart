@@ -45,12 +45,12 @@ class _MainPageState extends State<MainPage> {
       body: _pages[_currentState],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
-          backgroundColor: Colors.black45,
+          backgroundColor: Colors.white,
           labelTextStyle: WidgetStatePropertyAll(
-            TextStyle(color: Colors.white),
+            TextStyle(color: Colors.black),
           ),
-          iconTheme: WidgetStatePropertyAll(IconThemeData(color: Colors.white)),
-          indicatorColor: Colors.blueGrey[300],
+          iconTheme: WidgetStatePropertyAll(IconThemeData(color: Colors.black)),
+          indicatorColor: Colors.white,
         ),
         child: NavigationBar(
           onDestinationSelected: (value) {
