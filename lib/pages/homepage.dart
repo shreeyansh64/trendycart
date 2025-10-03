@@ -189,10 +189,96 @@ class _HomepageState extends State<Homepage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.asset('assets/images/price_drop2.webp',width: 200,height: 250,fit: BoxFit.cover,),
-                  Image.asset('assets/images/price_drop3.webp',width: 270,height: 250,fit: BoxFit.cover,),
+                  Image.asset(
+                    'assets/images/price_drop2.webp',
+                    width: 200,
+                    height: 250,
+                    fit: BoxFit.cover,
+                  ),
+                  Image.asset(
+                    'assets/images/price_drop3.webp',
+                    width: 270,
+                    height: 250,
+                    fit: BoxFit.cover,
+                  ),
                 ],
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 40),
+                child: Text(
+                  "HOT CATEGORIES",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Poppins',
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 40),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset(
+                                'assets/images/hot_h.jpg',
+                                width: 120,
+                                height: 120,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Text("Hoodies"),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset(
+                                'assets/images/hot_j.jpg',
+                                width: 120,
+                                height: 120,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Text("Jackets"),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: Image.asset(
+                                'assets/images/hot_je.jpg',
+                                width: 120,
+                                height: 120,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            Text("Jeans"),
+                          ],
+                        ),
+                      ],
+                    ),
+                    // Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    //   children: [
+                    //     Column(mainAxisAlignment: MainAxisAlignment.center ,children: [ClipRRect(borderRadius: BorderRadius.circular(15),child: Image.asset('assets/images/hot_p.jpg',width: 120,height: 120,fit: BoxFit.cover,)),Text("Polo Tees")],),
+                    //     Column(mainAxisAlignment: MainAxisAlignment.center ,children: [ClipRRect(borderRadius: BorderRadius.circular(15),child: Image.asset('assets/images/hot_s.jpg',width: 120,height: 120,fit: BoxFit.cover,)),Text("Shirts")],),
+                    //     Column(mainAxisAlignment: MainAxisAlignment.center ,children: [ClipRRect(borderRadius: BorderRadius.circular(15),child: Image.asset('assets/images/hot_t.jpg',width: 120,height: 120,fit: BoxFit.cover,)),Text("")],),
+                    //   ],
+                    // )
+                  ],
+                ),
+              ),
             ],
           ),
         ),

@@ -67,6 +67,12 @@ flutter:
     - assets/images/price_drop.webp
     - assets/images/price_drop2.webp
     - assets/images/price_drop3.webp
+    - assets/images/hot_h.jpg
+    - assets/images/hot_j.jpg
+    - assets/images/hot_je.jpg
+    - assets/images/hot_p.jpg
+    - assets/images/hot_s.jpg
+    - assets/images/hot_t.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
