@@ -146,6 +146,29 @@ class _ProfilepageState extends State<Profilepage> {
                   ],
                 ),
               ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.white,
+              ),
+              width: double.infinity,
+              height: 100,
+              child: NavigationBarTheme(
+                data: NavigationBarThemeData(
+                  backgroundColor: Colors.white,
+                  indicatorColor: Colors.white
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: NavigationBar(destinations: [
+                    NavigationDestination(icon: Text("100",style: TextStyle(color: Colors.black,fontSize: 25),), label: "Points"),
+                    NavigationDestination(icon: Text("1",style: TextStyle(color: Colors.black,fontSize: 25),), label: "Coupons"),
+                    NavigationDestination(icon: Text("₹1250",style: TextStyle(color: Colors.black,fontSize: 25),), label: "Wallet"),
+                    NavigationDestination(icon: Text("6",style: TextStyle(color: Colors.black,fontSize: 25),), label: "Wishlist"),
+                  ]),
+                ),
+              ),
             )
           ],
         ),
